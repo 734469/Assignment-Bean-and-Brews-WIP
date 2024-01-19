@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+</head>
+<body class="reg">
+            <div class="smolHeader">
+                <h1>Bean & Brew</h1>
+                <p>Log In </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+<div class="center">
+    <div class="logCont">
+        <form action="/login" method="POST">
+            <p>Enter Username:</p>
+            <p><input type="text" name="username" /></p>
+            <p>Enter Password:</p>
+            <p><input type="password" name="password" /></p>
+
+            <p><input type="submit" value="Submit" /></p>
+
+                <button><a href="{{url_for('register')}}">Register</a></button>
+        </form>
+    </div>
+</div>
+    <br>
+<div class="center">
+            <a href="{{url_for('option')}}">Return to Home Page </a>
+</div>
+    <br>
+<div class="footer">
+            <img class="imgyFoot" src="{{url_for('static', filename='CoffeeBanner.png')}}" alt="Coffee" width="40%" height="15%">
+</div>
+</body>
+</html>

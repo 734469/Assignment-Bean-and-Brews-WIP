@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+</head>
+<body class="reg">
+            <div class="wholeHeader">
+                <h1>Bean & Brew</h1>
+                <p>Booking Table: Leeds</p>
+            </div>
+      <table>
+        <tr>
+         </tr>
+            {%for table in table%}
+             {% if table.restaurant=='Leeds' %}
+               <tr>
+                     <td><a href="{{url_for('login')}}">{{table.restaurant}}</a> </td>
+               </tr>
+            {%endif%}
+            {%endfor%}
+
+          </td>
+          </tr>
+      </table>
+<a href="{{url_for('table_booking')}}">Back to Location </a><br> <br>
+  </body>
+</html>

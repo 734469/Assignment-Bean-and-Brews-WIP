@@ -1,0 +1,249 @@
+body{
+margin: 0px;
+background-color: #e9eaed;
+}
+
+.reg{
+background-color: #7A4419;
+}
+
+.header{
+background-color:  #400406;
+justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.header{
+  background:  #400406;
+  color: #D7BE82;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   max-height: 30%;
+   background-color: #400406;
+   text-align: center;
+     border-top: 20px solid #400406;
+     border-radius: 10px 10px 0px 0px;
+}
+
+.smolHeader{
+background-color:  #400406;
+justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+  color: #D7BE82;
+  border: 20px solid #400406;
+}
+
+.container {
+  color: white;
+  width: 100%
+}
+
+
+
+
+.text {
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  padding-left: 5px;
+  display:flex;
+}
+
+.imgy{
+max-height: 40%;
+max-width: 100%;
+}
+
+.imgyFoot{
+max-height: 15%;
+max-width: 40%;
+border: 2px solid #D7BE82;
+}
+
+.contrast{
+background-color: #D7BE82;
+padding: 3px;
+border-radius: 2px 2px 2px 2px;
+}
+
+/****Overlay****/
+.boxem{
+position: relative;
+  width: 50%;
+}
+
+.newImg{
+height: 50%;
+max-height: 50%;
+max-width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4E1A0C;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.boxem:hover .overlay {
+  height: 100%;
+}
+
+.ovrText {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/****NavBar****/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border:
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/****Orders Bar****/
+.orderBar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #400406;
+  border:
+}
+
+.orli {
+  float: left;
+}
+
+.orli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.orli a:hover:not(.active) {
+  background-color:#7F3737;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/****Tables Bar****/
+.tabBar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4D0406;
+  border: 2px solid #D7BE82;
+}
+
+.tabli {
+  float: left;
+}
+
+.tabli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.tabli a:hover:not(.active) {
+  background-color:#7F3737;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+/****Login****/
+.center{
+}
+
+.center{
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.logCont{
+background-color:  #400406;
+display: flex;
+justify-content: center;
+text-align: center;
+width: 30%;
+  color: #D7BE82;
+  border: 20px solid #400406;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.regCont{
+background-color:  #400406;
+width: 30%;
+  color: #D7BE82;
+  border: 20px solid #400406;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+.smolHeader{
+background-color:  #400406;
+justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+  color: #D7BE82;
+  border: 20px solid #400406;
+}
+
+.wholeHeader{
+background-color:  #400406;
+justify-content: center;
+  color: #D7BE82;
+  border: 20px solid #400406;
+}

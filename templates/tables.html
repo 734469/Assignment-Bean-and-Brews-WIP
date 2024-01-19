@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+</head>
+<body class="reg">
+            <div class="smolHeader">
+                <h1>Bean & Brew</h1>
+                <p>Book A Table</p>
+                <br>
+            </div>
+            <br>
+                <br>
+                <br>
+            <br>
+            <br>
+<div class="center">
+<div class="regCont">
+    <h2>Pick a Location</h2>
+    <div class="center">
+    <ul class="tabBar">
+  <li class="orli"><a href="{{url_for('leeds')}}">Leeds</a></li>
+  <li class="orli"><a href="#news">Harrogate</a></li>
+  <li class="orli"><a href="#contact">York</a></li>
+    </ul>
+        </div>
+</div>
+    </div>
+
+
+<div class="footer">
+            <img class="imgyFoot" src="{{url_for('static', filename='CoffeeBanner.png')}}" alt="Coffee" width="40%" height="15%">
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+</head>
+<body class="reg">
+            <div class="wholeHeader">
+                <h1>Bean & Brew</h1>
+                <p>Welcome</p>
+            </div>
+<ul class="orderBar">
+  <li class="orli"><a href="{{url_for('welcome')}}">Hot Drinks</a></li>
+        <li class="orli"><a href="{{url_for('cold_drink')}}">Cold Drinks</a></li>
+  <li class="orli"><a href="{{url_for('hot_food')}}">Hot Food</a></li>
+  <li class="orli"><a href="{{url_for('small')}}">Light Bites</a></li>
+        <li class="orli"><a href="{{url_for('snack')}}">Snacks</a></li>
+</ul>
+
+      <h3>Menu</h3>
+            <div id="chgtext"><h4>Snacks</h4></div>
+      <table>
+        <tr>
+         </tr>
+            {%for food in food%}
+             {% if food.food_type=='snack' %}
+               <tr>
+                     <td><a href="javascript:window.open('{{url_for('menu', type = food.food_name)}}', 'width=20,height=50', left=400, top =10);">{{food.food_name}}</a> </td>
+                     <td><img src="/static/{{food.path}}" width="100" height="100" ></td>
+               </tr>
+            {%endif%}
+            {%endfor%}
+
+          </td>
+          </tr>
+      </table>
+<a href="{{url_for('option')}}">Return to Home Page </a><br> <br>
+  </body>
+</html>

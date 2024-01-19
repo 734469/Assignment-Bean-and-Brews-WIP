@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+</head>
+<body>
+    <div class="header">
+            <img class="imgy" src="{{url_for('static', filename='CoffeeBanner.png')}}" alt="Coffee" style="width:100%;">
+            <h1>Welcome To</h1>
+        <h1>Bean & Brews</h1>
+    </div>
+    <ul>
+  <li><a href="{{url_for('login')}}">Login</a></li>
+        <li><a href="{{url_for('register')}}">Register An Account</a></li>
+  <li><a href="{{url_for('welcome')}}">Order</a></li>
+        <li><a href="{{url_for('table_booking')}}">Book a Table</a></li> <!--table-->
+  <li><a href="{{url_for('register')}}">Book baking lessons</a></li> <!--baking-->
+</ul>
+<br>
+<br>
+<div>
+    <h2>What's <strong>NEW</strong>?</h2>
+    <div class="boxem">
+        <a href="{{url_for('welcome')}}">
+        <img class="newImg" src="{{url_for('static', filename='NewItem.jpg')}}" alt="NEW">
+        <div class="overlay">
+            <div class="ovrText">Order Now</div>
+        </div>
+            </a>
+    </div>
+</div>
+
+</body>
+</html>
